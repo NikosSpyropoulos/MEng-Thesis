@@ -1,5 +1,6 @@
 # MEng-Thesis
 ## Information Retrieval using optical character recognition and display it using augmented reality
+*In the folder Report/ you can find a detailed report and a presentation in greek*
 
 ## Video Example
 https://user-images.githubusercontent.com/25778156/144503465-3f60c159-bba0-4588-a32c-373f05843df8.mp4
@@ -72,6 +73,7 @@ Ideas for the above image processing techniques came from here https://tesseract
 ### LocationMatcher Class
 * Find latitude and longitude of all possible addresses of professionals of the same surname, use of Geocoder
 * Find distance between user's last location and the corresponding address of the "scanned" professional that is in the database
+
 
 
 
