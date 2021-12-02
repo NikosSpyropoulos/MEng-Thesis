@@ -1,7 +1,11 @@
 # MEng-Thesis
 ## Information Retrieval using optical character recognition and display it using augmented reality
 
+## Video Example
+https://user-images.githubusercontent.com/25778156/144503465-3f60c159-bba0-4588-a32c-373f05843df8.mp4
+
 ## Brief description
+![](Images/app_descr.png)
 ### Goal of the thesis 
 * Implementation of an innovative and interactive Android application.
 * Information retieval from signages that can be found outside or inside buildings.
@@ -11,7 +15,7 @@
 ### Brief description of the app
 * Signage scan
 * OCR
-* Seach on the database (by recognized surname and user's current location)
+* Seach on the database (by recognized surname and user's current location to avoid wrong data because of duplicate surnames)
 * Desplay information in real-time on an AR signange
 
 ## The project in detail
@@ -31,4 +35,45 @@ In regard to the accuracy of the information retrieved, a search in the database
 For the **interactive part of augmented reality**, **ARCore** and **Sceneform** were used, which allow the installation of 3D models without the use of pure OpenGL. Specifically, a Viewrendable is used as an anchor and is located at the point where users click on their smartphones.
 
 Moreover, **experiments** such as a "professional building simulation" were performed to test the proper operation of the application and to ensure its accuracy. The application aims to offer the user its simplicity and ease of use combined with the full efficiency provided by a series of complex backend processes. The simple UI and the interactive interface of the application offer the user the possibility to call, send an email, access the website of each professional and receive more information by clicking on a virtual signage. This process can be done repeatedly on different signs easily and without any inconvenience. In addition, this application can also be further developed or extended to offer its audience a smart and fast tool that can be used to facilitate their daily lives for other forms of information retrieval.
+
+## Activity Diagram 
+![](Images/acttivity_diagram.png)
+## UML Main Activity
+![](Images/activity_uml.png)
+## Data scraping from vrisko.gr 
+![](Images/vrisko_gr.png)
+## SQLite DB
+![](Images/sqlite_db.png)
+## Diagram of Room's related classes
+![](Images/room_db.png)
+## UML DB classes
+![](Images/app_database_uml.png)
+## Image Processing example
+![](Images/image_processing.png)
+## Important classes 
+
+### MainActivity
+* Scan Signage when user tap on screen 
+* Search in the database for the corresponding surname word by word of the scanned text
+* Display Virtual AR signage and change included text depending on the distance bettween the user and the signane in the real-world 
+
+### ImageProcessor Class
+* Conversion of YUV420 current frame to Bitmap
+* Conversion of the frame to Gray Scale
+* Blur the frame via GaussianBlur and MedianBlur.
+* Otsu's Thresholding to the frame
+* Dilation of the bitmap 
+
+Ideas for the above image processing techniques came from here https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html
+
+### TessTextRecognizer Class
+* Tesseract OCR initialization for greek characters
+
+### LocationMatcher Class
+* Find latitude and longitude of all possible addresses of professionals of the same surname, use of Geocoder
+* Find distance between user's last location and the corresponding address of the "scanned" professional that is in the database
+
+
+
+
 
