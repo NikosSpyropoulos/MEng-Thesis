@@ -2,6 +2,7 @@
 ## Information Retrieval using optical character recognition and display it using augmented reality
 *In the folder Report/ you can find a detailed report and a presentation in greek*
 
+In this application the user can retrieve information about professionals (e.g. doctors) and interact with them via a virtual signage using AR. To retrieve the correct data, the user scans signages found on buildings with their smartphone. In addition, optical character recognition is performed to find the professional's last name on the signage . After the succesful OCR a search on a local database follows that is based on the scanned last name and user's current location (essential to avoid mistakes because of duplicate surnames).
 ## Video Example
 https://user-images.githubusercontent.com/25778156/144503465-3f60c159-bba0-4588-a32c-373f05843df8.mp4
 
