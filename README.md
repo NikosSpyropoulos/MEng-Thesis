@@ -1,8 +1,8 @@
 # MEng-Thesis
-## AR Android App - Information Retrieval using optical character recognition and display it using augmented reality
+## AR Location-Based Android App - Information Retrieval using optical character recognition and display it using augmented reality
 *In the folder Report/ you can find a detailed report and a presentation in greek*
 
-In this application the user can retrieve information about professionals (e.g. doctors) and interact with them via a virtual signage using AR. To retrieve the correct data, the user scans signages found on buildings with their smartphone. In addition, optical character recognition is performed to find the professional's last name on the signage . After the succesful OCR a search on a local database follows that is based on the scanned last name and user's current location (essential to avoid mistakes because of duplicate surnames).
+In this application the user can retrieve information about professionals (e.g. doctors) and interact with them via a virtual signage using AR. To retrieve the correct data, the user scans signages found on buildings with their smartphone. In addition, optical character recognition is performed to find the professional's last name on the signage . After the succesful OCR a search on a local database follows that is based on the scanned **last name** and user's **current location** (essential to avoid mistakes because of duplicate surnames).
 ## Video Example
 https://user-images.githubusercontent.com/25778156/144503465-3f60c159-bba0-4588-a32c-373f05843df8.mp4
 
@@ -11,18 +11,18 @@ https://user-images.githubusercontent.com/25778156/144503465-3f60c159-bba0-4588-
 ### Goal of the thesis 
 * Implementation of an innovative and interactive Android application.
 * Information retieval from signages that can be found outside or inside buildings.
-* Search using Optical Character Recognition.
+* Search using Optical Character Recognition and user's Location.
 * Display of information using Augmented reality
 
 ### Brief description of the app
 * Signage scan
 * OCR
-* Seach on the database (by recognized surname and user's current location to avoid wrong data because of duplicate surnames)
+* LBS
+* Seach on the database (by recognized surname and user's **current location** to avoid wrong data because of duplicate surnames)
 * Desplay information in real-time on an AR signange
 
 ## The project in detail
-People are always looking to obtain information most efficiently and effectively. Information on street signs or buildings may seem useful but most of the time, are not
-sufficient for the users. In addition to this limited information, the help of modern technologies such as **Optical Character Recognition** and **Augmented Reality** are able to solve the previously mentioned problems. Such advanced technologies provide the users an interactive application for retrieving information and using it in real time. Thus, allowing users to retrieve further information easily and quickly.
+People are always looking to obtain information most efficiently and effectively. Information on street signs or buildings may seem useful but most of the time, are not sufficient for the users. In addition to this limited information, the help of modern technologies such as **Optical Character Recognition** and **Augmented Reality** and **Local Based Services** are able to solve the previously mentioned problems. Such advanced technologies provide the users an interactive application for retrieving information and using it in real time. Thus, allowing users to retrieve further information easily and quickly.
 
 **This thesis** hence aims to overcome the information issues faced by users by developing an application in **Android Studio** for smart phones users. The application enables users to search for information about professionals such as doctors or lawyers that are located in Athens. Users are simply required to scan keywords from relevant **signages**. 
 
